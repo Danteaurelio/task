@@ -9,7 +9,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class TarefaController {
 
-	static allowedMethods = [save: "POST", update: "PUT", delete: "POST", completars: "POST"]
+	static allowedMethods = [save: "POST", update: "PUT", delete: "POST", completar: "POST"]
 
 	def index(Integer max) {
 		params.max = Math.min(max ?: 10, 100)
