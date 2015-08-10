@@ -97,6 +97,7 @@ class TarefaController {
 		redirect(action: "list")
 	}
 
+	@Transactional
 	def completar(Tarefa tarefaInstance) {
 
 		if (tarefaInstance == null) {
